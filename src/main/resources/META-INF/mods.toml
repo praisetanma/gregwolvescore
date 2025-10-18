@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+issueTrackerURL = "https://github.com/praisetanma/gregwolvescore/issues"
+license = "Insert License Here"
+
+[[mods]]
+modId = "gregwolvescore"
+version = "${version}"
+displayName = "Gregwolves Core"
+authors = "praisesolek"
+description = '''
+Coremod for the Gregwolves modpack.
+'''
+#logoFile = ""
+
+[[dependencies.gregwolvescore]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.gregwolvescore]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
