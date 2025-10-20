@@ -1,0 +1,49 @@
+{
+  "type": "lithostitched:add_surface_rule",
+  "levels": [
+    "minecraft:overworld"
+  ],
+  "surface_rule": {
+    "type": "minecraft:sequence",
+    "sequence": [
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "random_name": "minecraft:bedrock_floor",
+          "true_at_and_below": {
+            "above_bottom": 0
+          },
+          "false_at_and_above": {
+            "above_bottom": 5
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:bedrock"
+          }
+        }
+      },
+      {
+        "type": "minecraft:condition",
+        "if_true": {
+          "type": "minecraft:vertical_gradient",
+          "random_name": "gregwolvescore:blackstone_strata",
+          "true_at_and_below": {
+            "absolute": -64
+          },
+          "false_at_and_above": {
+            "absolute": -56
+          }
+        },
+        "then_run": {
+          "type": "minecraft:block",
+          "result_state": {
+            "Name": "minecraft:blackstone"
+          }
+        }
+      }
+    ]
+  }
+}
