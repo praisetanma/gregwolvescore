@@ -1,4 +1,4 @@
-package com.praisesolek;
+package com.praisesolek.gregwolvescore;
 
 import net.minecraftforge.fml.common.Mod;
 
