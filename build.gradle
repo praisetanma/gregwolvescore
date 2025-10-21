@@ -44,7 +44,6 @@ dependencies {
     mappings loom.officialMojangMappings()
     forge "net.minecraftforge:forge:$project.forge_version"
 
-    modImplementation "maven.modrinth:architectury-api:${architectury_version}" // Architectury isn't uploaded Modrinth's maven under MC versions as far as I can tell so we'll just use the explicit one for now. TODO: Figure out a better way of importing it.
     modImplementation "maven.modrinth:lithostitched:${lithostitched_version}-forge-1.20" // Can't use minecraft_version here because for some reason LS has its 1.20.1 jar labeled for 1.20
     modImplementation "com.gregtechceu.gtceu:gtceu-${minecraft_version}:${gtceu_version}"
     modImplementation "maven.modrinth:farmers-delight:${minecraft_version}-${farmers_delight_version}"
